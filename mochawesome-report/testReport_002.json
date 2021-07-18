@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-07-18T05:46:17.986Z",
+    "end": "2021-07-18T05:46:20.201Z",
+    "duration": 2215,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "c7f92239-1876-4826-817e-e7c9f70f37e7",
+      "title": "",
+      "fullFile": "cypress/integration/toDoListTest.js",
+      "file": "cypress/integration/toDoListTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8330876-8085-4bc0-a8fb-b07022b277f7",
+          "title": "ToDo List Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validation of availability of elements",
+              "fullTitle": "ToDo List Test Suite Validation of availability of elements",
+              "timedOut": null,
+              "duration": 1056,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "hpObj.validateAvailabilityOfElements();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:8080/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:8080\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `ToDo List Test Suite`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:8080/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:8080\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `ToDo List Test Suite`\n    at http://localhost:56037/__cypress/runner/cypress_runner.js:140471:23\n    at visitFailedByErr (http://localhost:56037/__cypress/runner/cypress_runner.js:139830:12)\n    at http://localhost:56037/__cypress/runner/cypress_runner.js:140470:11\n    at tryCatcher (http://localhost:56037/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (http://localhost:56037/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (http://localhost:56037/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (http://localhost:56037/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (http://localhost:56037/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (http://localhost:56037/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (http://localhost:56037/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:56037/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (http://localhost:56037/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:56037/__cypress/tests?p=cypress\\integration\\toDoListTest.js:106:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:8080\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "c0df21a0-b6d5-44d2-a523-47b37d1046be",
+              "parentUUID": "b8330876-8085-4bc0-a8fb-b07022b277f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation of adding a task to list",
+              "fullTitle": "ToDo List Test Suite Validation of adding a task to list",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const task = \"Get Milk\";\nhpObj.addTaskInToDoList(task);",
+              "err": {},
+              "uuid": "9e510cf6-bce8-4d05-b2d5-3a5a92bea1af",
+              "parentUUID": "b8330876-8085-4bc0-a8fb-b07022b277f7",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Validation deletion of single task from list",
+              "fullTitle": "ToDo List Test Suite Validation deletion of single task from list",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "hpObj.deleteSingleTask();",
+              "err": {},
+              "uuid": "c9150825-4586-4322-a79a-e1db13d7e76e",
+              "parentUUID": "b8330876-8085-4bc0-a8fb-b07022b277f7",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c0df21a0-b6d5-44d2-a523-47b37d1046be"
+          ],
+          "pending": [],
+          "skipped": [
+            "9e510cf6-bce8-4d05-b2d5-3a5a92bea1af",
+            "c9150825-4586-4322-a79a-e1db13d7e76e"
+          ],
+          "duration": 1056,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testReport",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "testReport",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

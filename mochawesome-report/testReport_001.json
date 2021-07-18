@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-18T05:42:51.990Z",
+    "end": "2021-07-18T05:42:55.610Z",
+    "duration": 3620,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "54bb9672-51df-44e3-a49b-793ad35c8b20",
+      "title": "",
+      "fullFile": "cypress/integration/toDoListTest.js",
+      "file": "cypress/integration/toDoListTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff3fb481-4624-4b64-8f7c-a89bf01c1e29",
+          "title": "ToDo List Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validation of availability of elements",
+              "fullTitle": "ToDo List Test Suite Validation of availability of elements",
+              "timedOut": null,
+              "duration": 1411,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "hpObj.validateAvailabilityOfElements();",
+              "err": {},
+              "uuid": "de4a1a48-5ece-482c-99a4-2017ff269d27",
+              "parentUUID": "ff3fb481-4624-4b64-8f7c-a89bf01c1e29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation of adding a task to list",
+              "fullTitle": "ToDo List Test Suite Validation of adding a task to list",
+              "timedOut": null,
+              "duration": 469,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const task = \"Get Milk\";\nhpObj.addTaskInToDoList(task);",
+              "err": {},
+              "uuid": "0123ca79-4208-494b-acf0-185ef234752d",
+              "parentUUID": "ff3fb481-4624-4b64-8f7c-a89bf01c1e29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation deletion of single task from list",
+              "fullTitle": "ToDo List Test Suite Validation deletion of single task from list",
+              "timedOut": null,
+              "duration": 184,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "hpObj.deleteSingleTask();",
+              "err": {},
+              "uuid": "43b7b19c-a706-4b03-bb6e-e2eb5b50757a",
+              "parentUUID": "ff3fb481-4624-4b64-8f7c-a89bf01c1e29",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "de4a1a48-5ece-482c-99a4-2017ff269d27",
+            "0123ca79-4208-494b-acf0-185ef234752d",
+            "43b7b19c-a706-4b03-bb6e-e2eb5b50757a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2064,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testReport",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "testReport",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

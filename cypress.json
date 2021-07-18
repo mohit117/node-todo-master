@@ -1,0 +1,26 @@
+{
+
+    "defaultCommandTimeout": 10000,
+    "pageLoadTimeout": 10000,
+
+    "env":{
+        "testUrl" : "http://localhost:8080/"
+    },
+
+    "retries":{
+        "runMode" : 1,
+        "openMode" : 1
+    },
+    
+"reporter":"mochawesome",
+"reporterOptions": {
+  
+    "reportFilename": "testReport",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "charts":true
+}
+
+
+}

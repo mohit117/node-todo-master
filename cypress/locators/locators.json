@@ -1,0 +1,14 @@
+{
+
+    "homePageLocators":
+    {
+
+        "textBox" : "input[type='text']",
+        "addButton": "button[type='submit']",
+        "toDoNumbers" : ".label",
+        "firsttask":".checkbox > .ng-binding",
+        "singletask" : "input[type='checkbox']"
+      
+    }
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "node-todo",
+  "version": "0.0.1",
+  "description": "Simple todo application.",
+  "main": "server.js",
+  "author": "Scotch",
+  "scripts": {
+    "start": "node server.js",
+    "testall": ".\\node_modules\\.bin\\cypress run",
+    "merge-report": "mochawesome-merge mochawesome-report/*.json > mochawesome.json",
+    "generate-reports": "merge mochawesome-report/mochawesome.json",
+    "test": "npm run testall -- --headed && npm run merge-report && npm run generate-reports"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.11",
+    "morgan": "^1.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^7.7.0",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  }
+}
